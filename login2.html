@@ -1,0 +1,61 @@
+<html>
+ <head>
+  <title>Registration Form</title> 
+  <script>
+    // User Validations
+function loginValidation() {
+        // Ramesh
+var uname = document.myform.uname.value;
+         //Ramesh@123
+var password = document.myform.password.value;
+        if(uname==null || uname=="") {
+          alert("Name cant be blank")
+          return false;  
+       } else if (password.length<6){
+          alert("Password Must be 6 letters")
+          return false;
+       }  
+       return true                 
+    }           
+ </script>
+  <style>
+    
+         #myvideo {
+        position: fixed;
+        right:0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
+      .content {
+        position: relative;
+        z-index: 1;
+        margin: auto;
+        color:wheat;
+        text-align: center;
+        bottom: 0;
+        width: 500px;
+        height: 500px;
+        padding: 10px;
+        border-radius: 20px;
+
+      }
+     h1 {
+       color:yellow;
+       }
+  </style>
+ </head>
+ <body>
+  <video autoplay muted loop id="myVideo">
+    <source src="vedio1.mp4" type="video/mp4">
+  </video>
+  <div class="content"><br><br><br><br><br>
+    <center><hr><h1>login page</h1><hr><br><br><br>
+      <form name="myform" action="home.html" 	onsubmit="return loginValidation(this)">
+    User Name:<input type="text" name="uname" autofocus placeholder=" user name"><br><br>
+    Password:<input type="password" name="password" placeholder=" password"><br><br>
+    <input type="submit"></center>
+  </form>
+  </div>
+ </body>
+</html>

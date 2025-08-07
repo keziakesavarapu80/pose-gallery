@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+      <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+        <title>Poses Refering</title>
+        <style>
+            nav {
+                background-color: rgb(220, 237, 25);
+                color: white;
+                padding: 10px
+            }
+            nav ul {
+                   list-style-type: none;
+                   margin: 0;
+                   padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+            .container {
+                width: 100%;
+                width: 820px;
+                height: 340px;
+                display: flex;
+                gap: 10px;
+                margin-inline: 50px;
+            }
+            .card {
+                min-width: 70px;
+                height: 100%;
+                display: flex;
+                border-radius: 30px;
+                align-items: flex-end;
+                flex-grow: 1;
+                position: relative;
+                transition: flex-grow 0.5s ease;
+            }
+            .card:hover {
+                flex-grow: 7;
+            }
+            .card-content > .title {
+                margin-left: 10px;
+                translate: 0 100%;
+                opacity: 0;
+            }
+            .card:hover .title {
+                opacity: 1;
+                translate: 0 0;
+            }
+h1 {
+    color:blueviolet;
+}
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.items {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+padding: 30px 20px;
+grid-column-gap: 20px;
+grid-row-gap: 30px;
+}
+.item img{
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+@media screen and (min-width: 767px) {
+                .container {
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+            }
+            @media screen and (min-width: 767px) and (max-width: 1024px) {
+                .container {
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                .container {
+                    width: 980%;
+                    padding: 5px 10px;
+                }
+            }
+            @media screen and (min-width: 1280px) {
+                .container {
+                    width: 1200%;
+                    padding: 5px 20px;
+                }
+            }
+  </style>
+
+    </head>
+    <body>
+        <center><img src="logo.jpg" width="100" height="120"></center>
+        <br><br>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li><a href="login2.html">LOGIN</a></li>
+                <li><a href="loginsuccess2.html">CONTACT US</a></li>
+                <li><a href="about1.html">ABOUT US</a></li>
+                <li><a href="review.html">REVIEWS</a></li>
+            </ul>
+            </nav>
+      <center><p><br>A thing that you see in my pictures is that I was not afraid to fall in love with these people
+        Great photography is about depth of feeling, not depth of field.
+      </p></center>
+<body>
+<center><h1><i>Some trending poses</i></h1></center>
+
+<section class="items">
+    <div class="item">
+        <img src="trending1.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending2.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending25.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending27.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending3.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending13.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending15.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending19.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending14.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending21.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending11.jpg" height="275px" alt="" />
+    </div>
+    <div class="item">
+        <img src="trending10.jpg" height="275px" alt="" />
+    </div>
+
+</section>
+
+<center><h1><b>Different Types</b></h1></center>
+<div class="carousel">
+
+<div class="wrap">
+    
+<a href="registration.html">
+<img src="baby.jpg" height="275px" alt="" /><center>Newborn</center>
+</a>
+
+<a href="registration.html">
+<img src="children.jpg" height="275px" alt="" /><center>Kids</center>
+</a>
+
+<a href="registration.html">
+    <img src="insta.jpg" height="275px" alt="" /><center>Insta</center>
+    </a>
+
+<a href="registration.html">
+    <img src="yoga background.jpg" height="275px" alt="" /><center>yoga</center>
+    </a>
+
+<a href="registration.html">
+<img src="single.jpg" height="275px" alt="" /><center>Selflove</center>
+</a>
+
+<a href="registration.html">
+<img src="double.jpg" height="275px" alt="" /><center>Duel</center>
+</a>
+
+<a href="registration.html">  
+<img src="trio.jpg" height="275px" alt="" /><center>Trio</center>
+</a>
+
+<a href="registration.html">
+<img src="group.jpg" height="275px" alt="" /><center>Group</center>
+</a>
+
+<a href="registration.html">
+<img src="family.jpg" height="275px" alt="" /><center>Family</center>
+</a>
+
+<a href="registration.html">
+    <img src="copule.jpg" height="275px" alt="" /><center>Wedding</center>
+    </a>
+
+</div>
+</div>
+</body>
+</html>
