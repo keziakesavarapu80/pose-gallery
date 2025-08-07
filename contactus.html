@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>contact us</title>
+    <script>  
+      function validateemail()  
+      {  
+      var myemail=document.myform.email.value;  
+      var atposition=myemail.indexOf("@");  
+      var dotposition=myemail.lastIndexOf(".");  
+      var video = document.getElementById("myVideo");
+      var no = document.myform.no.value;
+      var a = document.myform.a.value;
+      if (atposition<1 || dotposition<atposition+2 || dotposition+2>=myemail.length){  
+        alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+        return false;  
+        }  return true;
+      if(no==null || a=="") {
+        alert("Name cant be blank")
+          return false;  
+       } else if (password.length<6){
+          alert("Password Must be 6 letters")
+          return false;
+       }  
+       return true            
+      }
+    </script>  
+    <style>
+      #myvideo {
+        position: fixed;
+        right:0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
+      .content {
+        position: relative;
+        z-index: 1;
+        margin: auto;
+        color:wheat;
+        text-align: center;
+        bottom: 0;
+        width: 500px;
+        height: 500px;
+        padding: 10px;
+        border-radius: 20px;
+
+      }
+      
+      h1 {
+        color: blue;
+      }
+      h2 {
+        color: black;
+      }
+    </style>
+
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="vedio.mp4" type="video/mp4">
+  </video>
+  <div class="content"><br><br><br><br><br>
+<hr><h1><center>CONTACT US</h1><hr><br><br>
+  <form name="myform"  method="post" action="home.html" onsubmit="return validateemail();"> 
+ <h2> Email id : <input type="text" list="email" name="email" placeholder=" email" autofocus>
+  <datalist id="email">
+  <option value="ram@gamil.com"></option>
+               <option value="ramkumar@yahoo.com"></option>
+               <option value="ramkumar@hotmail.com"></option>
+               <option value="ramkumar123@gmail.com"></option>
+                    
+          </datalist><br><br>
+Phone Number:<input type="tel"  name="no" pattern="[0-9]{10}" title="the ten digits number" placeholder=" phone number" ><br><br>
+Address:<input type="text" name="a" placeholder="address"><br><br>
+Message:<br><textarea name="t" id="t" >message...</textarea><br>
+<br><input type="submit"></h2></form></center>
+</div>
+</body>
+</html>
