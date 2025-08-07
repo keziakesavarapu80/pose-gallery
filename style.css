@@ -1,0 +1,44 @@
+body {
+ height: 100vh;
+    
+    margin: 20px;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 1600px;
+}
+.wrap {
+
+display: grid;
+
+grid-auto-flow: column;
+
+grid-auto-columns: 250px;
+
+justify-items: stretch;
+
+animation: slide 15s linear infinite;
+}
+
+.wrap img {
+
+width: 200px;
+
+height: 260px;
+
+border-radius: 50px;
+
+object-fit: cover;
+
+}
+
+@keyframes slide {
+
+to {
+
+translate: calc(-2 * 275px);
+
+}
+
+}
